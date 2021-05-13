@@ -310,7 +310,7 @@ button:active {
 .section-number .vertical-line {
   display: block;
   height: 84px;
-  border-left: 1px solid #87879D;
+  border-left: 1px solid rgba(134, 134, 156, 0.25);
 }
 
 .section-number .circled-num {
@@ -321,7 +321,7 @@ button:active {
   height: 3.5rem;
   background-color: #FAFAFA;
   border-radius: 50%;
-  border: 1px solid #87879D;
+  border: 1px solid rgba(134, 134, 156, 0.25);
 }
 
 .section1 {
@@ -576,6 +576,6 @@ button:active {
   height: 100%;
   width: 100%;
   background-color: #4D96A9;
-  opacity: 0.8;
+  opacity: 0.9;
 }
 /*# sourceMappingURL=style.css.map */

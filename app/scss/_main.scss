@@ -6,7 +6,7 @@
     .vertical-line{
         display: block;
         height: 84px;
-        border-left: 1px solid $lightBluishGray;
+        border-left: 1px solid $lightBluishGrayBorder
     }
     .circled-num {
         display: block;
@@ -16,7 +16,7 @@
         height: 3.5rem;
         background-color: $subWhite;
         border-radius: 50%;
-        border: 1px solid $lightBluishGray;
+        border: 1px solid $lightBluishGrayBorder;
     }
 }
 
@@ -213,7 +213,7 @@
             height: 100%;
             width: 100%;
             background-color: $darkTeal;
-            opacity: 0.8;
+            opacity: 0.9;
         }
 
         
