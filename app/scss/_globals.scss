@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;900&display=swap');
+
+html {
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: 100%;
+    box-sizing: border-box;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: $subWhite;
+}
+
+
+// font sizes(lh) mob > tab > desk
+// h1 40(44) > 48(48) > 64(64) -- weight 900
+// h2 32(36) > 40(44) > 40(44) -- weight 900
+// p  16(26) >> (same for all)
+// p in footer 18(26) >>
+// overline 16(26)(4ls) uppercase >> -- weight 900
+// button 16(26) >> -- weight 900
+
+h1, h2 {
+    color: $darkBluishGray;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2.5rem;
+    line-height: 1.1em;
+
+    @include breakpoint-up(medium) {
+        font-size: 3rem;
+        line-height: 1em;
+    }
+
+    @include breakpoint-up(large) {
+        font-size: 4rem;
+        line-height: 1em;
+    }
+}
+
+h2 {
+    font-size: 2rem;
+    line-height: 1.125em;
+
+    @include breakpoint-up(medium) {
+        font-size: 2.5rem;
+        line-height: 1.1em;
+    }
+}
+
+p {
+    color: $lightBluishGray;
+    font-size: 1rem;
+    line-height: 1.625em;
+    text-align: center;
+
+    @include breakpoint-up(large) {
+        font-size: 1.125rem;
+        line-height: 1.444em;
+    }
+
+}
+
+.overline {
+    color: $darkTeal;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 0.25em;
+
+    @include breakpoint-up(large) {
+        font-size: 1rem;
+    }
+
+}
+
+
+button {
+    font-family: 'Red Hat Display', sans-serif;
+    width: 12.0625rem;
+    height: 3.625rem;
+    border: none;
+    border-radius: 1.8125rem;
+    font-size: 1rem;
+    font-weight: 900;
+    color: $subWhite;
+    cursor: pointer;
+
+    &.cta-teal {
+        background-color: $darkTeal;
+        
+        .highlight {
+            color: $lightTeal
+        }
+
+        &:hover {
+            background-color: $medTeal;
+        }
+    }
+
+    &.cta-violet {
+        background-color: $darkViolet;
+
+        .highlight {
+            color: $lightViolet
+        }
+
+        &:hover {
+            background-color: $medViolet;
+        }
+    }
+
+    &:active {
+        transform: scale(99%, 99%);
+    }
+}
